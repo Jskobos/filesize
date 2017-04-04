@@ -1,0 +1,19 @@
+html
+  head
+    title= title
+    link(href="//cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet")
+    != css('custom')
+  body
+    h3 
+      p= message
+    section.file-field
+      form#file-form.form(method="POST" enctype="multipart/form-data")
+        .form-group
+          input#file-input(type="file" name="input-file" size="10") 
+          button#file-submit.btn.btn-primary(type="submit") Submit
+      div#results
+        span.fname
+        span.fsize
+    script(src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js")
+    
+        
