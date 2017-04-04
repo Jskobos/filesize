@@ -4,6 +4,7 @@
   "description": "Project for FreeCodeCamp.com backend certification program.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "jasmine-node spec/"
   },
   "repository": {
